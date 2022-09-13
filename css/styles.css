@@ -8,6 +8,7 @@
   --second-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --accent-color: #2196f3;
+  --accent-btn-color: #188ce8;
   --footer-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -24,24 +25,26 @@ a {
 }
 /* Header */
 
-.header {
-  font-style: normal;
+.menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: var(--first-title-color);
 }
 
 .header a {
   text-decoration: none;
-  color: var(--first-title-color);
 }
-.contact-item a {
+.contact-link {
   color: var(--text-color);
 }
-.header a:hover,
-.header a:active {
+.menu-link:hover,
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
+  outline: transparent;
 }
 
 .header .logo {
@@ -85,6 +88,15 @@ a {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.top-btn:hover,
+.top-btn:focus {
+  background: var(--accent-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: transparent;
 }
 /* Features */
 
@@ -172,6 +184,16 @@ a {
   color: var(--footer-color);
 }
 
+.map-linkk:hover,
+.map-link:focus,
+.contacts:hover,
+.contacts:focus,
+.map-link:hover,
+.map-link:focus {
+  color: var(--accent-color);
+  outline: transparent;
+}
+
 /* Portfolio */
 
 .filter-item-btn {
@@ -184,10 +206,11 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
+  cursor: pointer;
 }
 
 .filter-item-btn:hover,
-.filter-item-btn:active {
+.filter-item-btn:focus {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -198,6 +221,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  outline: transparent;
 }
 
 .portfolio-item h2 {
