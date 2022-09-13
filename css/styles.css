@@ -130,6 +130,9 @@ a {
 .team {
   background-color: var(--second-background-color);
 }
+
+.team-item{
+background-color: var(--first-background-color);}
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -145,6 +148,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
 
 /* Footer */
 .footer {
